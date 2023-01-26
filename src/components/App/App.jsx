@@ -15,12 +15,8 @@ export class App extends Component {
     const phoneСontacts = JSON.parse(savedContacts);
 
     if (phoneСontacts !== null) {
-      this.setState({
+      return this.setState({
         contacts: phoneСontacts,
-      });
-    } else {
-      this.setState({
-        contacts: [],
       });
     }
   }
